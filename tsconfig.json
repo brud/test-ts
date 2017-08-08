@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "noImplicitUseStrict": false,
+    "removeComments": true,
+    "noLib": false,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "rootDir": ".",
+    "outDir": "dist/"
+  },
+  "exclude": [
+    "**/*.js",
+    "!custom-typings/**/*.d.ts",
+    "node_modules/**",
+    "dist/**",
+    ".idea/**",
+    ".git/**"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "files": [
+    "configs/configs.ts",
+    "configs/database-config.ts",
+    "configs/logging-config.ts",
+    "configs/server-config.ts",
+    "custom-typings/continuation-local-storage/continuation-local-storage.d.ts",
+    "src/models/index.ts",
+    "src/models/interfaces/product-interface.ts",
+    "src/models/product-model.ts",
+    "src/routers/product-router.ts",
+    "src/server.ts",
+    "src/services/product-service.ts",
+    "src/utils/logger.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  }
+}
